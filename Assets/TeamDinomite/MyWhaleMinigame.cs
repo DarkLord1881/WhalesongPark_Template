@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MyWhaleMinigame : MinigameBase
 {
-    [SerializeField] private PlayerFish[] m_Players;
+    [SerializeField] private PlayerController[] m_Players;
     /// <summary>
     /// This function is called at the end of the game so that it knows what to display on the score screen.
     /// You give it information about what each players score was, how much time they earned individually, and also how much time they've earned together

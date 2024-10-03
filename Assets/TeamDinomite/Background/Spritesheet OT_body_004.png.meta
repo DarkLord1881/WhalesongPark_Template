@@ -182,7 +182,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Spritesheet OT_body_004_0: 1713000934163057448
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

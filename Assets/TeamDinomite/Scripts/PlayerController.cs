@@ -26,22 +26,22 @@ public class PlayerController : MonoBehaviour
 
         if (direction.y == 1f)
         {
-            transform.eulerAngles = new Vector3(0, 0, 0f);
+            transform.eulerAngles = new Vector3(0, 0, 270f);
         }
 
         if (direction.x == -1f)
         {
-            transform.eulerAngles = new Vector3(0, 0, 90f);
+            transform.eulerAngles = new Vector3(0, 0, 0f);
         }
 
         if (direction.y == -1f)
         {
-            transform.eulerAngles = new Vector3(0, 0, 180f);
+            transform.eulerAngles = new Vector3(0, 0, 90f);
         }
 
         if (direction.x == 1f)
         {
-            transform.eulerAngles = new Vector3(0, 0, 270f);
+            transform.eulerAngles = new Vector3(0, 0, 180f);
         }
     }
     void checkAxis() // This checks if user pressed left or right
