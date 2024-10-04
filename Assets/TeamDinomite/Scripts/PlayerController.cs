@@ -24,22 +24,22 @@ public class PlayerController : MonoBehaviour
         //Save the direciton to use later
         inputDirection = direction;
 
-        if (direction.y == 1f)
+        if (direction.y == -1f)
         {
             transform.eulerAngles = new Vector3(0, 0, 270f);
         }
 
-        if (direction.x == -1f)
+        if (direction.x == 1f)
         {
             transform.eulerAngles = new Vector3(0, 0, 0f);
         }
 
-        if (direction.y == -1f)
+        if (direction.y == 1f)
         {
             transform.eulerAngles = new Vector3(0, 0, 90f);
         }
 
-        if (direction.x == 1f)
+        if (direction.x == -1f)
         {
             transform.eulerAngles = new Vector3(0, 0, 180f);
         }
