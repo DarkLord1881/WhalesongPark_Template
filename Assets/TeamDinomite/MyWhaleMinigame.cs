@@ -5,6 +5,7 @@ using UnityEngine;
 public class MyWhaleMinigame : MinigameBase
 {
     [SerializeField] private PlayerController[] m_Players;
+    private int[] m_Scores;
     /// <summary>
     /// This function is called at the end of the game so that it knows what to display on the score screen.
     /// You give it information about what each players score was, how much time they earned individually, and also how much time they've earned together
@@ -66,5 +67,10 @@ public class MyWhaleMinigame : MinigameBase
         //Is there any cleanup you have to do when the game gets totally reset?
         //This might just be empty!
 
+    }
+
+    private void FixedUpdate()
+    {
+        
     }
 }
