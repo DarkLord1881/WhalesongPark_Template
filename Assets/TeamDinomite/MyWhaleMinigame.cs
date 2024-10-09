@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class MyWhaleMinigame : MinigameBase
 {
+    [Header("Game Specific variables")]
+
     [SerializeField] private PlayerController[] m_Players;
-    private int[] m_Scores;
+    int[] m_Scores;
     /// <summary>
     /// This function is called at the end of the game so that it knows what to display on the score screen.
     /// You give it information about what each players score was, how much time they earned individually, and also how much time they've earned together
@@ -20,7 +22,7 @@ public class MyWhaleMinigame : MinigameBase
         {
             if (PlayerUtilities.GetPlayerState(i) == Player.PlayerState.ACTIVE)
             {
-                gsd.PlayerScores[i] = 1;                        //Each player scored one point
+                gsd.PlayerScores[i] = m_Scores[i];                        //Each player scored one point
                 gsd.PlayerTimes[i] = gsd.PlayerScores[i] * 2;   //Each player gets two seconds per point scored
                 teamTime += gsd.PlayerTimes[i];                 //Keep a running total of the total time scored by all players
             }
